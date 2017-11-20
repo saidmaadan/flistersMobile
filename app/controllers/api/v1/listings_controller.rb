@@ -36,7 +36,7 @@ class Api::V1::ListingsController < ApplicationController
   end
 
   def show
-    listing = Listing.find(params[:id])
+    listing = Listing.friendly.find(params[:id])
 
     today = Date.today
     reservations = Reservation.where(
