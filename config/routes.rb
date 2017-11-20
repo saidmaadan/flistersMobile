@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       post '/payments' => 'users#add_card'
 
       resources :listings
+      resources :reservations
     end
   end
 end
