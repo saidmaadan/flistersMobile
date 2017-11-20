@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/logout' => 'users#logout'
       post '/facebook' => 'users#facebook'
+      post '/payments' => 'users#add_card'
 
       resources :listings
     end
